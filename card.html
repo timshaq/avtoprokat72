@@ -1,0 +1,887 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<title>Карточка автомобиля</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="libs/css/jquery.datetimepicker.css"/>
+	<script src="libs/js/jquery-3.5.1.min.js"></script>
+	<script src="libs/js/jquery-migrate-1.2.1.min.js"></script>
+	<script src="libs/js/jquery.datetimepicker.full.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="js/common.min.js" defer></script>
+</head>
+
+<body>
+
+<div class="header mount">
+</div>
+
+<header class="header fixed">
+
+<div class="header__contacts">
+	
+	<div class="header__fix-container">
+
+		<div class="header__logo">
+			
+			<a href="index.html"><img src="img/menu-burger__logo.png" alt="Логотип" class="logo__img"></a>
+
+		</div>
+
+		<div class="header__address">
+			г. Тюмень, ул. Дмитрия Менделеева, 18 (ТЦ «Дарина, офис 307)
+		</div>
+
+		<div class="header__work-hours">
+			<span class="working-hours__item">Пн-Пт: 9:00 - 21:00</span>
+			<span class="working-hours__item">Сб-Вс: 11:00 - 6:00</span>
+		</div>
+
+		<ul class="header__social-list">
+			<li class="social-list__item vk-btn">
+				<a  href="https://vk.com/tyum_auto" target="_blank">
+					<img src="img/vk-btn.png" alt="Иконка ВК" class="item_img">
+				</a>
+			</li>
+			<li class="social-list__item inst-btn">
+				<a href="https://www.instagram.com/autoprokat72.ru/" target="_blank">
+					<img src="img/inst-btn.png" alt="Иконка Инстаграм" class="item_img">
+				</a>
+			</li>
+			<li class="social-list__item fb-btn">
+				<a href="https://www.facebook.com/autoprokat72" target="_blank">
+					<img src="img/fb-btn.png" alt="Иконка Фэйсбук" class="item_img">
+				</a>
+			</li>
+			<li class="social-list__item od-btn">
+				<a href="https://ok.ru/autoprokat72" target="_blank">
+					<img src="img/od-btn.png" alt="Иконка Одноклассники" class="item_img">
+				</a>
+			</li>
+			<li class="social-list__item">
+				<a href="https://twitter.com/autoprokat72" target="_blank">
+					<img src="img/tw-btn.png" alt="Иконка Твиттер" class="item_img">
+				</a>
+			</li>
+		</ul>
+
+		<div class="header__phone-contacts">
+
+			<div class="header__phone-number">
+				<a href="tel:+73452736377" target="_blank" class="phone-number__item item1">+7 (3452) 736 377</a>
+				<a href="tel:+79088672559" target="_blank" class="phone-number__item">+7 (908) 867 25 59</a>
+			</div>
+
+			<div class="header__chats">
+				<a href="tg://resolve?domain=autoprokat72" target="_blank" class="chats__item telegram">Telegram</a>
+				<a href="viber://add?number=79088672559" target="_blank" class="chats__item viber">Viber</a>
+				<a href="https://wa.me/79088672559" target="_blank" class="chats__item whatsapp">Whatsapp</a>
+			</div>
+			
+		</div>
+
+		<div class="header__burger">
+			<div class="burger__fix">
+				<span class="fix__item top"></span>
+				<span class="fix__item middle"></span>
+				<span class="fix__item bottom"></span>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+<nav class="header__navigation">
+
+	<div class="header__fix-container">
+
+		<ul class="header__nav-list">
+
+			<li class="nav-list__item">
+				<a href="index.html">Главная</a>
+			</li>
+
+			<li class="nav-list__item">
+				<a href="index.html#autopark">Автопарк</a>
+			</li>
+
+			<li class="nav-list__item">
+				<a href="index.html#conditions">Условия</a>
+			</li>
+
+			<li class="nav-list__item">
+				<a href="enity.html">Юридическим лицам</a>
+			</li>
+
+			<li class="nav-list__item">
+				<a href="rent.html">Сдать авто в аренду</a>
+			</li>
+
+			<li class="nav-list__item">
+				<a href="blog.html">Блог</a>
+			</li>
+
+			<li class="nav-list__item">
+				<a href="about.html">О компании</a>
+			</li>
+
+			<li class="nav-list__item">
+				<a href="contacts.html">Контакты</a>
+			</li>
+
+		</ul>
+
+	</div>
+
+</nav>
+
+</header>
+
+
+<main>
+
+<section class="page-preview font-bebas">
+	<div class="page-preview__mask"></div>
+	<h1 class="page-preview__title">Аренда/Прокат <span id="car-name">Ford Focus 3 Рестайлинг</span></h1>
+	<div class="page-preview__chats">
+		<a href="tg://resolve?domain=autoprokat72" class="chat__item"><img src="img/telegram.png" alt=""></a>
+		<a href="viber://add?number=79088672559" class="chat__item"><img src="img/viber.png" alt=""></a>
+		<a href="https://wa.me/79088672559" class="chat__item"><img src="img/whatsapp.png" alt=""></a>
+	</div>
+</section>
+
+<section class="page-informtion">
+	<div class="page-informtion__fix-content">
+		<div class="page-informtion__breadscrumbs">
+			<ul class="page-informtion__breadscrumbs-list">
+				<li class="breadscrumbs-list__item home"><a href="index.html">Главная</a></li>
+				<li class="breadscrumbs-list__item home"><a href="#">Аренда автомобилей</a></li>
+				<li class="breadscrumbs-list__item">Ford Focus 3</li>
+			</ul>
+		</div>
+		<h2 class="page-informtion__page-name">Аренда Ford Focus 3 рестайлинг в Тюмени</h2>
+		<span class="page-informtion__page-subname">Реальные фото автомобиля</span>
+	</div>
+</section>
+
+<div class="columns">
+	<div class="columns__fix-content">
+
+		<div class="columns__col-left">
+			
+		<section class="car-info">
+			<img src="img/card__img2.png" alt="" class="car-info__img watch" data-index="0">
+			<div id="card-slider" class="car-info__slider">
+				<img src="img/card__img3.png" alt="" class="slider__item watch" data-index="1">
+				<img src="img/card__img4.png" alt="" class="slider__item watch" data-index="2">
+				<img src="img/card__img4.png" alt="" class="slider__item watch" data-index="3">
+				<img src="img/card__img3.png" alt="" class="slider__item watch" data-index="4">
+				<img src="img/card__img4.png" alt="" class="slider__item watch" data-index="5">
+				<img src="img/card__img4.png" alt="" class="slider__item watch" data-index="6">
+			</div>
+			<div class="car-info__details">
+
+				<div class="car-info__characteristics">
+					<h4 class="characteristics__title">Характеристики:</h4>
+					<ul class="characteristics__list">
+
+						<li class="list__item">
+							<span class="item__name">Коробка:</span>
+							<span class="item__argument">Автомат</span>
+						</li>
+
+						<li class="list__item">
+							<span class="item__name">Кузов:</span>
+							<span class="item__argument">Универсал</span>
+						</li>
+
+						<li class="list__item">
+							<span class="item__name">Цвет:</span>
+							<span class="item__argument">Белый</span>
+						</li>
+
+						<li class="list__item">
+							<span class="item__name">Привод:</span>
+							<span class="item__argument">Передний</span>
+						</li>
+
+						<li class="list__item">
+							<span class="item__name">Мощность:</span>
+							<span class="item__argument">125 л.с.</span>
+						</li>
+
+						<li class="list__item">
+							<span class="item__name">Клиренс:</span>
+							<span class="item__argument">160мм.</span>
+						</li>
+
+						<li class="list__item">
+							<span class="item__name">Мест:</span>
+							<span class="item__argument">5 шт.</span>
+						</li>
+
+						<li class="list__item">
+							<span class="item__name">Тип двигателя:</span>
+							<span class="item__argument">Бензин</span>
+						</li>
+
+						<li class="list__item">
+							<span class="item__name">Расход:</span>
+							<span class="item__argument">6.3л/100км.</span>
+						</li>
+
+					</ul>
+				</div>
+
+				<div class="car-info__equipment">
+					<h4 class="equipment__title">Комплектация:</h4>
+					<ul class="equipment__list">
+
+						<li class="list__item">
+							<img src="img/equip__1.png" alt="" class="item__img">
+							Кондиционер A/C
+						</li>
+
+						<li class="list__item">
+							<img src="img/equip__2.png" alt="" class="item__img">
+							Блютуз
+						</li>
+
+						<li class="list__item">
+							<img src="img/equip__3.png" alt="" class="item__img">
+							Подогрев руля
+						</li>
+
+						<li class="list__item">
+							<img src="img/equip__4.png" alt="" class="item__img">
+							Парктроники
+						</li>
+
+						<li class="list__item">
+							<img src="img/equip__5.png" alt="" class="item__img">
+							AUX
+						</li>
+
+					</ul>
+					
+				</div>
+
+				<div class="car-info__conditions">
+					<h4 class="conditions__title">Условия:</h4>
+
+					<ul class="conditions__list">   
+
+						<li class="list__item">
+							<span class="item__name">Минимальный возраст клиента:</span>
+							<span class="item__argument">от 23-х лет.</span>
+						</li>
+
+						<li class="list__item">
+							<span class="item__name">Водительский стаж:</span>
+							<span class="item__argument">от 2-х лет.</span>
+						</li>
+
+						<li class="list__item article">
+							Автомобиль предоставляется гражданам Российской Федерации, при наличии регистрации на территории РФ.
+						</li>
+
+						<li class="list__item">
+							<div href="#link-modal" class="item__fake-link">Условия для нерезедента РФ
+								<p class="item__modal" id="link-modal" >
+									Наша компания предоставляет право управления автомобилем иностранным гражданам, при условии заключения договора проката с гражданином РФ и наличием водительского удостоверения международного образца иностранного водителя.
+								</p>
+
+							</div>
+						</li>
+
+					</ul>
+					
+				</div>
+
+			</div>
+
+			<div class="car-info__desription">
+				<h3 class="desription__title">О автомобиле:</h3>
+				<p class="desription__article">
+					Предлагаем в аренду автомобиль Ford Focus  от 1950 рублей. Универсал нового поколения Форд Фокус 3 был представлен на выставке в Детройте в 2010 году как бескомпромиссный вариант для поклонников марки.  После дебюта автомобиль набирает популярность практически на всех континентах мира, включая и Россию. В нашей стране Форд Фокус собирают в городе Всеволожск, недалеко от Санкт-Петербурга, на заводе Ford Sollers. В 2012 году с их конвейера съехал первый универсал нового поколения.
+				</p>
+			</div>
+
+			<div class="car-info__reviews">
+				<h3 class="reviews__title">Отзывы об автомобиле:</h3>
+
+				<div class="reviews__comment">
+
+					<div class="comment__photo">
+						<img src="img/card__img6.png" alt="" class="photo__item">
+					</div>
+
+					<div class="comment__text">
+						<span class="text__name">Александр Иванович</span>
+						<span class="text__date">20 декабря 2020 в 23:20</span>
+						<p class="text__article">
+							Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.
+						</p>
+					</div>
+
+				</div>
+
+				<div class="reviews__comment">
+
+					<div class="comment__photo">
+						<img src="img/card__img6.png" alt="" class="photo__item">
+					</div>
+
+					<div class="comment__text">
+						<span class="text__name">Александр Иванович</span>
+						<span class="text__date">20 декабря 2020 в 23:20</span>
+						<p class="text__article">
+							Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.
+						</p>
+
+						<div class="comment__reply">
+
+						<div class="reply__admin">
+							<img src="img/card__img7.png" alt="" class="admin__img">
+							<span class="admin__name">Администрация “Тюменский автопрокат”</span>
+						</div>
+
+						<p class="reply__article">
+							Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу.
+						</p>
+						
+					</div>
+
+
+					</div>
+
+				</div>
+
+				<div class="reviews__comment">
+
+					<div class="comment__photo">
+						<img src="img/card__img6.png" alt="" class="photo__item">
+					</div>
+
+					<div class="comment__text">
+						<span class="text__name">Александр Иванович</span>
+						<span class="text__date">20 декабря 2020 в 23:20</span>
+						<p class="text__article">
+							Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.
+						</p>
+					</div>
+
+				</div>
+
+				<button class="reviews__put-review font-bebas">Оставить отзыв</button>
+
+			</div>
+
+		</section>
+
+		</div>
+
+		<div class="columns__col-right">
+			<form class="options" id="calcForm">
+				<h3 class="options__title">Без ограничения пробега</h3>
+				<div class="options__tariffs">
+					<h4 class="tariffs__title">Тарифы:</h4>
+					<ul class="tariffs__list">
+
+						<li class="list__item">
+							<div class="item__name">
+								<span class="name__item bold">Город:</span>
+							</div>
+						</li>
+
+						<li class="list__item">
+							<div class="item__name">
+								<span class="name__item">1 день</span>
+								<img src="img/info.png" alt="" class="name__img">
+							</div>
+							<span class="item__attribute">2000 руб/сутки</span>
+						</li>
+
+						<li class="list__item">
+							<div class="item__name">
+								<span class="name__item">2-3 дня</span>
+								<img src="img/info.png" alt="" class="name__img">
+							</div>
+							<span class="item__attribute">1800 руб/сутки</span>
+						</li>
+
+						<li class="list__item">
+							<div class="item__name">
+								<span class="name__item">4-30 дней</span>
+								<img src="img/info.png" alt="" class="name__img">
+							</div>
+							<span class="item__attribute">1700 руб/сутки</span>
+						</li>
+
+						<li class="list__item">
+							<div class="item__name">
+								<span class="name__item bold">Межгород</span>
+								<img src="img/info.png" alt="" class="name__img">
+							</div>
+							<span class="item__attribute">2300 руб/сутки</span>
+						</li>
+
+						<li class="list__item">
+							<div class="item__name">
+								<span class="name__item bold">Россия</span>
+								<img src="img/info.png" alt="" class="name__img">
+							</div>
+							<span class="item__attribute">от 2500 руб/сутки</span>
+						</li>
+
+						<li class="list__item">
+							<div class="item__name">
+								<span class="name__item bold">Почасовой прокат</span>
+								<img src="img/info.png" alt="" class="name__img">
+							</div>
+							<span class="item__attribute">300 руб/час</span>
+						</li>
+
+						<li class="list__item">
+							<img src="img/info_green.png" alt="" class="item__img">
+							<span class="item__text">
+								Почасовой прокат оплачивается отдельно по&nbsp;факту сдачи автомобиля но не позже 21:00
+							</span>
+						</li>
+
+					</ul>
+				</div>
+
+				<div class="options__registration">
+					<h4 class="registration__title">Оформление:</h4>
+					<div class="registration__tariff">
+						<span class="tariff__title">Выбор тарифа:</span>
+						<select name="tariff" id="tariff" class="tariff__select">
+							<option value="day1">Город 1 день</option>
+							<option value="day3">Город 2-3 дня</option>
+							<option value="day30">Город 4-30 дней</option>
+							<option value="dayCities">Межгород</option>
+							<option value="dayRus">Россия</option>
+							<option value="hours">Почасовой прокат</option>
+						</select>
+					</div>
+					<div class="registration__dates">
+						<div class="dates__take">
+
+							<div class="take__start">
+								<span class="start__title">Дата получения:</span>
+								<input type="text" placeholder="2020-05-16" class="start__input date-input" id="startDate">
+							</div>
+
+							<div class="take__end">
+								<span class="end__title">Время получения:</span>
+								<input type="text" placeholder="17:30" class="end__input time-input" id="endDate">
+							</div>
+							
+						</div>
+						<div class="dates__put">
+
+							<div class="put__start">
+								<span class="start__title">Дата возврата:</span>
+								<input type="text" placeholder="2020-05-16" class="start__input date-input" id="startTime">
+							</div>
+
+							<div class="put__end">
+								<span class="end__title">Время возврата:</span>
+								<input type="text" placeholder="17:30" class="end__input time-input" id="endTime">
+							</div>
+							
+						</div>
+					</div>
+				</div>
+
+				<div class="options__dope">
+					<h4 class="dope__title">Дополнительные услуги:</h4>
+					<div class="dope__address">
+						<div class="address__start">
+							<span class="start__title">Адрес подачи авто:</span>
+							<select name="select1" id="select1" class="start__select">
+								<option value="">Аэропорт (ул. Сергея Ильюшина, 10)</option>
+								<option value="">ЖД Вокзал (ул. Привокзальная, 22)</option>
+								<option value="">ТЦ Кристалл (ул. Дмитрия Менделеева, 1)</option>
+							</select>
+						</div>
+						<div class="address__end">
+							<span class="end__title">Адрес сдачи авто:</span>
+							<select name="select2" id="select2" class="end__select">
+								<option value="">Аэропорт (ул. Сергея Ильюшина, 10)</option>
+								<option value="">ЖД Вокзал (ул. Привокзальная, 22)</option>
+								<option value="">ТЦ Кристалл (ул. Дмитрия Менделеева, 1)</option>
+							</select>
+						</div>
+					</div>
+					<div class="dope__items" id="dopeItems">
+						<ul class="items__list">
+
+							<li class="list__item">
+								<label class="item__checkbox">
+									<input type="checkbox" class="checkbox__input" name="dope" value="wash">
+									<span class="checkbox__name">Мойка автомобиля</span>
+								</label>
+								<div class="item__price">500 руб.</div>
+							</li>
+
+							<li class="list__item">
+								<label class="item__checkbox">
+									<input type="checkbox" class="checkbox__input" name="dope" value="fill">
+									<span class="checkbox__name">Заправка автомобиля</span>
+								</label>
+								<div class="item__price">бесплатно</div>
+							</li>
+
+							<li class="list__item">
+								<label class="item__checkbox">
+									<input type="checkbox" class="checkbox__input" name="dope" value="childSeat">
+									<span class="checkbox__name">Детское кресло</span>
+								</label>
+								<div class="item__price">500 руб.</div>
+							</li>
+
+							<li class="list__item">
+								<label class="item__checkbox">
+									<input type="checkbox" class="checkbox__input" name="dope" value="charger">
+									<span class="checkbox__name">Зарядное устройство</span>
+								</label>
+								<div class="item__price">бесплатно</div>
+							</li>
+
+							<li class="list__item">
+								<label class="item__checkbox">
+									<input type="checkbox" class="checkbox__input" name="dope" value="AUX">
+									<span class="checkbox__name">Кабель AUX</span>
+								</label>
+								<div class="item__price">бесплатно</div>
+							</li>
+
+							<li class="list__item">
+								<label class="item__checkbox">
+									<input type="checkbox" class="checkbox__input" name="dope" value="cam">
+									<span class="checkbox__name">Видеорегистратор</span>
+								</label>
+								<div class="item__price">бесплатно</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+
+				<div class="options__calc">
+					<div class="calc__rent">
+						<span class="rent__name">За аренду на 4 суток:</span>
+						<span class="rent__summ" id="rentSumm">0 руб.</span>
+					</div>
+					<div class="calc__dope">
+						<span class="dope__name">За дополнительные услуги:</span>
+						<span class="dope__summ" id="dopeSumm">0 руб.</span>
+					</div>
+					<div class="calc__total">
+						<span class="total__name">Итого:</span>
+						<span class="total__summ" id="totalSumm">0 руб.</span>
+					</div>
+				</div>
+
+				<button type="submit" class="options__submit font-bebas">ОФОРМИТЬ ЗАЯВКУ</button>
+				
+			</form>
+		</div>
+		
+	</div>
+</div>
+
+<section class="stock">
+	<div class="stock__fix-content">
+		<h3 class="stock__title">Ещё автомобили в наличии прямо сейчас:</h3>
+		<div class="stock__offers">
+
+			<div class="offers__item">
+				<span class="item__status">Свободен</span>
+				<a href="null.html" target="_blank"><img src="img/card__img8.png" alt="" class="item__img"></a>
+				<div class="item__inform">
+					<h4 class="item__title"><a href="#">Volkswagen Polo 2015</a></h4>
+					<ul class="item__characteristics">
+						<li class="characteristics__item">1.6 Л</li>
+						<li class="characteristics__item">Автомат</li>
+						<li class="characteristics__item">Бензин</li>
+					</ul>
+					<span class="item__price">от 1600 руб.</span>
+				</div>
+			</div>
+
+			<div class="offers__item">
+				<span class="item__status">Свободен</span>
+				<a href="null.html" target="_blank"><img src="img/card__img8.png" alt="" class="item__img"></a>
+				<div class="item__inform">
+					<h4 class="item__title"><a href="#">Volkswagen Polo 2015</a></h4>
+					<ul class="item__characteristics">
+						<li class="characteristics__item">1.6 Л</li>
+						<li class="characteristics__item">Автомат</li>
+						<li class="characteristics__item">Бензин</li>
+					</ul>
+					<span class="item__price">от 1600 руб.</span>
+				</div>
+			</div>
+
+			<div class="offers__item">
+				<span class="item__status">Свободен</span>
+				<a href="null.html" target="_blank"><img src="img/card__img8.png" alt="" class="item__img"></a>
+				<div class="item__inform">
+					<h4 class="item__title"><a href="#">Volkswagen Polo 2015</a></h4>
+					<ul class="item__characteristics">
+						<li class="characteristics__item">1.6 Л</li>
+						<li class="characteristics__item">Автомат</li>
+						<li class="characteristics__item">Бензин</li>
+					</ul>
+					<span class="item__price">от 1600 руб.</span>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+</main>
+
+
+<div class="map">
+	<div id="togmap" class="map__toggle-btn">
+		<div>Свернуть карту</div>
+	</div>
+	<div id="yamap">
+		<script id="map" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9eb8571f65457e799e16da13d4e314a89ec9861e70b715efb89ad004fa98acec&amp;width=100%25&amp;height=475&amp;lang=ru_RU&amp;scroll=false"></script>
+	</div>
+	
+</div>
+
+<footer class="footer">
+	
+<nav class="footer__navigation">
+
+	<div class="footer__fix-container">
+		
+		<ul class="footer__nav-list">
+			
+			<li class="nav-list__item">
+				<a href="null.html" class="item__link">Франшиза</a>
+			</li>
+			
+			<li class="nav-list__item">
+				<a href="null.html" class="item__link">полезные советы</a>
+			</li>
+			
+			<li class="nav-list__item">
+				<a href="null.html" class="item__link">рассрочка</a>
+			</li>
+			
+			<li class="nav-list__item">
+				<a href="null.html" class="item__link">вакансии</a>
+			</li>
+			
+			<li class="nav-list__item">
+				<a href="null.html" class="item__link">партнерам</a>
+			</li>
+			
+			<li class="nav-list__item">
+				<a href="null.html" class="item__link">услуги</a>
+			</li>
+
+		</ul>
+
+	</div>
+
+</nav>
+
+<div class="footer__contacts">
+
+	<div class="footer__fix-container">
+
+		<div class="footer__contacts-information">
+		
+			<div class="footer__address">
+				<h6 class="footer__title">Где нас найти ?</h6>
+				<span class="address__subtitle">г. Тюмень, ул. Дмитрия Менделеева, 18 (ТЦ "Дарина", офис 307)</span>
+			</div>
+
+			<div class="footer__work-hours">
+				<h6 class="footer__title">Время работы</h6>
+				<span class="work-hours__subtitle">БУДНИ: 9:00 - 21:00</span>
+				<span class="work-hours__subtitle">ВЫХОДНЫЕ: 11:00 - 18:00</span>
+			</div>
+
+			<div class="footer__phone-contacts">
+				<h6 class="footer__title">Контакты</h6>
+				<a href="tel:+73452388311" class="phone-contacts__subtitle">Телефон: +7 (3452) 388-311 </a>
+				<a href="tel:+79088672559" class="phone-contacts__subtitle">Viber: +7-908-867-25-59</a>
+				<div class="footer__chats">
+					<a href="tg://resolve?domain=autoprokat72" target="_blank" class="chats__item"><img src="img/telegram.png" alt="" class="chats_img_telegram"></a>
+					<a href="viber://add?number=79088672559" target="_blank" class="chats__item viber"><img src="img/viber.png" alt="" class="chats_img_telegram"></a>
+					<a href="https://wa.me/79088672559" target="_blank" class="chats__item"><img src="img/whatsapp.png" alt="" class="chats_img_telegram"></a>
+				</div>
+			</div>
+
+			<div class="footer__payments">
+				<h6 class="footer__title">Принимаем к оплате</h6>
+
+				<div class="footer__banks-logo">
+					<img src="img/visa.png" alt="" class="payments__item">
+					<img src="img/master-card.png" alt="" class="payments__item">
+					<img src="img/tinkoff.png" alt="" class="payments__item">
+					<img src="img/vtb.png" alt="" class="payments__item vtb">
+					<img src="img/alfa.png" alt="" class="payments__item alfa">
+					<img src="img/sber.png" alt="" class="payments__item sber">
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="footer__copyright">
+			<small class="copyright__item">© 2019 Тюменский Автопрокат Тюмень Справочник Тюмени</small>
+		</div>
+
+	</div>
+
+</div>
+
+</footer>
+
+<div class="menu-mob">
+	<div class="menu-burger">
+		<div class="menu-burger__logo">
+			<img src="img/menu-burger__logo.png" alt="" class="logo__img">
+		</div>
+
+		<nav class="menu-burger__navigation">
+
+				<ul class="menu-burger__nav-list">
+
+					<li class="nav-list__item">
+						<a href="index.html">Главная</a>
+					</li>
+
+					<li class="nav-list__item">
+						<a href="index.html#autopark">Автопарк</a>
+					</li>
+
+					<li class="nav-list__item">
+						<a href="index.html#conditions">Условия</a>
+					</li>
+
+					<li class="nav-list__item">
+						<a href="enity.html">Юридическим лицам</a>
+					</li>
+
+					<li class="nav-list__item">
+						<a href="rent.html">Сдать авто в аренду</a>
+					</li>
+
+					<li class="nav-list__item">
+						<a href="blog.html">Блог</a>
+					</li>
+
+					<li class="nav-list__item">
+						<a href="about.html">О компании</a>
+					</li>
+
+					<li class="nav-list__item">
+						<a href="contacts.html">Контакты</a>
+					</li>
+
+				</ul>
+
+		</nav>
+
+		<div class="menu-burger__address">
+			<h6 class="address__title">Где нас найти ?</h6>
+			<span class="address__subtitle">г. Тюмень, ул. Дмитрия Менделеева, 18 (ТЦ "Дарина", офис 307)</span>
+		</div>
+
+		<div class="menu-burger__work-hours">
+			<h6 class="work-hours__title">Время работы</h6>
+			<span class="work-hours__item">БУДНИ: 9:00 - 21:00</span>
+			<span class="work-hours__item">ВЫХОДНЫЕ: 11:00 - 18:00</span>
+		</div>
+
+		<div class="menu-burger__phone-contacts">
+
+			<h6 class="phone-contacts__title">Контакты</h6>
+
+			<div class="phone-contacts__phone-number">
+				<a href="tel:+73452736377" target="_blank" class="phone-number__item item1">+7 (3452) 736 377</a>
+				<a href="tel:+79088672559" target="_blank" class="phone-number__item">+7 (908) 867 25 59</a>
+			</div>
+
+			<div class="phone-contacts__chats">
+				<a href="tg://resolve?domain=autoprokat72" target="_blank" class="chats__item telegram">Telegram</a>
+				<a href="viber://add?number=79088672559" target="_blank" class="chats__item viber">Viber</a>
+				<a href="https://wa.me/79088672559" target="_blank" class="chats__item whatsapp">Whatsapp</a>
+			</div>
+		</div>
+		
+		<div class="menu-burger__social">
+			<h6 class="social__title">Мы в соцсетях:</h6>
+			<ul class="social__social-list">
+				<li class="social-list__item vk-btn"><a href=""></a></li>
+				<li class="social-list__item inst-btn"><a href=""></a></li>
+				<li class="social-list__item fb-btn"><a href=""></a></li>
+				<li class="social-list__item od-btn"><a href=""></a></li>
+				<li class="social-list__item tw-btn"><a href=""></a></li>
+			</ul>
+		</div>
+
+		<button class="menu-burger__close"><img src="img/menu__close.png" alt="" class=""></button>
+	</div>
+</div>
+
+<div class="put-review">
+	<form action="#" class="put-review__modal">
+		<h6 class="modal__title">Оставить свой отзыв об автомобиле Ford Focus 3</h6>
+		<div class="modal__inputs">
+			<label for="name" class="inputs__label">
+				<span class="label__name">Ваше ФИО</span>
+				<input id="name" type="text" class="label__input name" placeholder="Введите ФИО">
+			</label>
+			<label for="email" class="inputs__label">
+				<span class="label__name">Ваша почта</span>
+				<input id="email" type="email" class="label__input phone" placeholder="example@mail.ru">
+			</label>
+		</div>
+		<label for="review" class="modal__label">
+			<span class="label__name">Ваш отзыв</span>
+			<textarea name="review" id="review" cols="30" rows="10" placeholder="Введите отзыв" class="label__textarea"></textarea>
+		</label>
+		<label for="file" class="modal__label">
+			<input id="file" type="file" class="label__input">
+			<span class="label__name file">Загрузите вашу фотографию</span>
+		</label>
+		<button class="modal__btn font-bebas">Оставить отзыв</button>
+		<button type="button" class="modal__close"><img src="img/form__close.png" alt="" class="close__img"></button>
+	</form>
+</div>
+
+<div class="gallery">
+	<div class="gallery__wrapper" id="fullscreen">
+		<img src="img/card__img2.png" alt="" class="fulscreen__photo">
+		<img src="img/card__img3.png" alt="" class="fulscreen__photo">
+		<img src="img/card__img4.png" alt="" class="fulscreen__photo">
+		<img src="img/card__img4.png" alt="" class="fulscreen__photo">
+		<img src="img/card__img3.png" alt="" class="fulscreen__photo">
+		<img src="img/card__img4.png" alt="" class="fulscreen__photo">
+		<img src="img/card__img4.png" alt="" class="fulscreen__photo">
+	</div>
+	<button class="gallery__close"><img src="img/menu__close.png" alt="" class="close__img"></button>
+</div>
+
+</body>
+
+</html>
